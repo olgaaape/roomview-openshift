@@ -28,7 +28,7 @@ function ctlInicio(){
             else {
                 $msg="Error: usuario y contrase�a no v�lidos.";
                 
-                include_once 'App/plantilla/principal.php';
+                include_once 'webroot/App/plantilla/principal.php';
                 session_destroy();
             }
         }
@@ -46,11 +46,11 @@ function ctlVerReserva(){
 
     if($_SESSION['tipo']=="ADMIN"){
         $listIncidencias=modeloDB::getIncidence();
-        include_once 'App/plantilla/reservaAdmin.php';
+        include_once 'webroot/App/plantilla/reservaAdmin.php';
        
      
     }else{
-        include_once 'App/plantilla/reservaEmpleado.php'; 
+        include_once 'webroot/App/plantilla/reservaEmpleado.php'; 
     }
   
        
@@ -104,7 +104,7 @@ function ctlElegirSala(){
         
         $_SESSION['evento']=$evento;
         $msg="Selecciona una sala para completar su reserva.";
-        include_once 'App/plantilla/reservaEmpleado.php';
+        include_once 'webroot/App/plantilla/reservaEmpleado.php';
         
         
     } else {

@@ -75,7 +75,7 @@ class modeloDB {
         
         $reservas_string = json_encode($solucion);
         
-        $file = 'App/dat/reserva.json';
+        $file = 'webroot/App/dat/reserva.json';
         file_put_contents($file, $reservas_string);
       
         return $file;
