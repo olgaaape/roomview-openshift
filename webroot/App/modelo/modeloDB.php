@@ -1,6 +1,6 @@
 <?php
 
-include_once '../config.php';
+include_once 'webroot/App/config.php';
 
 
 class modeloDB {
