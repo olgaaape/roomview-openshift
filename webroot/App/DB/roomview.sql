@@ -2,8 +2,8 @@
 -- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
--- Servidor: localhost
--- Tiempo de generación: 06-05-2020 a las 12:15:38
+-- Servidor: 127.0.0.1
+-- Tiempo de generación: 06-06-2020 a las 16:55:23
 -- Versión del servidor: 10.4.11-MariaDB
 -- Versión de PHP: 7.4.5
 
@@ -51,6 +51,27 @@ INSERT INTO `empleados` (`EMP_NO`, `NOMBRE`, `APELLIDO`, `CLAVE`, `DPTO`, `TIPO_
 -- --------------------------------------------------------
 
 --
+-- Estructura de tabla para la tabla `incidencias`
+--
+
+CREATE TABLE `incidencias` (
+  `id` int(11) NOT NULL,
+  `id_reserva` int(11) NOT NULL,
+  `id_empleado` int(11) NOT NULL,
+  `descripcion` text NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `incidencias`
+--
+
+INSERT INTO `incidencias` (`id`, `id_reserva`, `id_empleado`, `descripcion`) VALUES
+(4, 26, 1001, 'Quiero eliminar esta reunion'),
+(5, 28, 1001, 'deseo eliminar la reunion');
+
+-- --------------------------------------------------------
+
+--
 -- Estructura de tabla para la tabla `reserva`
 --
 
@@ -72,14 +93,8 @@ CREATE TABLE `reserva` (
 --
 
 INSERT INTO `reserva` (`id`, `title`, `descripcion`, `color`, `textcolor`, `start`, `sala_no`, `emp_no`, `hora`, `dia`) VALUES
-(1, 'Evento 1', 'celebrando', '#FFFF0F', '#00000', '2020-04-25 12:30', 1, 1001, '12:30', '2020-04-25'),
-(2, 'evento 2', 'hola ', 'blue', 'white', '2020-04-26 12:30', 3, 1001, '12:30', '2020-04-26 '),
-(3, 'pepe', 'prueba', 'red', 'white', '2020-05-01 10:30', 4, 1001, '10:30', '2020-05-01 '),
-(9, 'dsfds', 'dfdff', '#00dbfe', 'white', '2020-05-15 10:30', 2, 1001, '10:30', '2020-05-15 '),
-(20, 'Prueba 2', 'dsaffds', 'blue', 'white', '2020-05-14 10:30', 3, 1001, '10:30', '2020-05-14'),
-(22, 'sala 4', '', '#000000', 'white', '2020-05-14 10:30', 4, 1001, '10:30', '2020-05-14'),
-(23, 'cambiar', '', '#000000', 'white', '2020-05-08 12:19', 3, 1001, '12:19', '2020-05-08'),
-(24, 'cambiar', '', '#0043ff', 'white', '2020-05-07 03:16', 2, 1001, '03:16', '2020-05-07');
+(27, 'Reunion informatica', '', '#0011ff', 'white', '2020-06-03 12:30', 2, 1001, '12:30', '2020-06-03'),
+(29, 'reunion para charlar', 'somos 3 personas', '#00d9ff', 'white', '2020-06-04 11:30', 3, 1001, '11:30', '2020-06-04');
 
 -- --------------------------------------------------------
 
@@ -113,6 +128,12 @@ ALTER TABLE `empleados`
   ADD PRIMARY KEY (`EMP_NO`);
 
 --
+-- Indices de la tabla `incidencias`
+--
+ALTER TABLE `incidencias`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indices de la tabla `reserva`
 --
 ALTER TABLE `reserva`
@@ -129,10 +150,16 @@ ALTER TABLE `salas`
 --
 
 --
+-- AUTO_INCREMENT de la tabla `incidencias`
+--
+ALTER TABLE `incidencias`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
 -- AUTO_INCREMENT de la tabla `reserva`
 --
 ALTER TABLE `reserva`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=30;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
