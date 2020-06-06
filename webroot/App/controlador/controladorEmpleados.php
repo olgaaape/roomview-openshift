@@ -2,7 +2,7 @@
 
 // -------Controlador que realiza la reserva de salas--------
 
-include_once 'App/config.php';
+include_once 'webroot/App/config.php';
 include_once 'App/modelo/modeloDB.php';
 
 
