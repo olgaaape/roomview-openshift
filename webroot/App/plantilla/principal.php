@@ -13,10 +13,10 @@
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 
         <!-- CUSTOM CSS -->
-        <link rel="stylesheet" href="Web/css/main.css">
+        <link rel="stylesheet" href="webroot/Web/css/main.css">
         <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-        <link rel="stylesheet" href="/resources/demos/style.css">
-        <link rel="shortcut icon" type="image/x-icon" href="Web/favicon/favicon.ico" />
+        <link rel="stylesheet" href="webroot/resources/demos/style.css">
+        <link rel="shortcut icon" type="image/x-icon" href="webroot/Web/favicon/favicon.ico" />
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
 
         <!-- BOOTSTRAP SCRIPTS -->
@@ -30,7 +30,7 @@
         <!-- CABECERA -->
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <img src="Web/img/logo.png" style="width: 15%" alt="logo bootstrap">
+                <img src="webroot/Web/img/logo.png" style="width: 15%" alt="logo bootstrap">
             </div>
             </div>
         </nav>
@@ -46,7 +46,7 @@
                         <div id="login" class="col-md-4 topmargin-lg bg-white text-dark p-5">
                             <b><?= (isset($msg))?$msg:"" ?></b>
                             <div>
-                                <img src="Web/img/grupo.png" id="icon" alt="User Icon" />
+                                <img src="webroot/Web/img/grupo.png" id="icon" alt="User Icon" />
                             </div>
                             <form method="post" action="index.php">
                                 <div class="form-group p-1">

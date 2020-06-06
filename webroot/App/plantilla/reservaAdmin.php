@@ -8,15 +8,15 @@
 
 		<!-- BOOTSTRAP CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-		<script src='Web/js/fullcalendar/jquery.min.js'></script>
-		<script src='Web/js/fullcalendar/moment.min.js'></script>
+		<script src='webroot/Web/js/fullcalendar/jquery.min.js'></script>
+		<script src='webroot/Web/js/fullcalendar/moment.min.js'></script>
 
 		<!-- FULLCALENDAR CSS-->
-		<link href='Web/css/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
-		<script src='Web/js/fullcalendar/fullcalendar.min.js'></script>
+		<link href='webroot/Web/css/fullcalendar/fullcalendar.min.css' rel='stylesheet' />
+		<script src='webroot/Web/js/fullcalendar/fullcalendar.min.js'></script>
 
 		<!-- FULLCALENDAR JS PLUGINS-->
-		<script src='Web/js/fullcalendar/es.js'></script>
+		<script src='webroot/Web/js/fullcalendar/es.js'></script>
 
 		<!-- BOOTSTRAP JS -->
 		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -25,11 +25,11 @@
 
 		<!-- CUSTOM CSS -->
 		<link rel="stylesheet" href="Web/css/main.css">
-		<link rel="shortcut icon" type="image/x-icon" href="Web/favicon/favicon.ico" />
+		<link rel="shortcut icon" type="image/x-icon" href="webroot/Web/favicon/favicon.ico" />
 
 		<!-- ENLACES RELOJ -->
-		<link href="Web/css/clockpicker/clockpicker.css" rel="stylesheet" />
-		<script src="Web/js/clockpicker/clockpicker.js"></script>
+		<link href="webroot/Web/css/clockpicker/clockpicker.css" rel="stylesheet" />
+		<script src="webroot/Web/js/clockpicker/clockpicker.js"></script>
 
 		<script>
 			$(document).ready(function(){
@@ -45,7 +45,7 @@
 						$("#ModalReserva").modal();
 					},
 					//Rellenar el formulario con los datos de la BD
-					events:'App/dat/reserva.json',
+					events:'webroot/App/dat/reserva.json',
 
 					eventClick:function(calEvent,jsEvent,view){
 						$('#tituloEvento').html(calEvent.title);
@@ -78,10 +78,10 @@
 		<nav class="navbar" id="cabecera">
 		<div class="container-fluid">
 			<div class="col-auto mr-auto" >
-				<img src="Web/img/logo.png" style="width: 15%" alt="logo bootstrap">
+				<img src="webroot/Web/img/logo.png" style="width: 15%" alt="logo bootstrap">
 			</div>
 			<div class="col-auto" >
-				<a href="<?= $auto?>?orden=Cerrar"><img src="Web/img/logout.png"></a>
+				<a href="<?= $auto?>?orden=Cerrar"><img src="webroot/Web/img/logout.png"></a>
 				<b>Usuario:</b> <?=  $_SESSION['user'];?>
 				
 			</div>
