@@ -24,7 +24,7 @@
 
 
 		<!-- CUSTOM CSS -->
-		<link rel="stylesheet" href="Web/css/main.css">
+		<link rel="stylesheet" href="webroot/Web/css/main.css">
 		<link rel="shortcut icon" type="image/x-icon" href="webroot/Web/favicon/favicon.ico" />
 
 		<!-- ENLACES RELOJ -->

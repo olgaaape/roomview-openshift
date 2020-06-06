@@ -23,7 +23,7 @@ hr{
 
 .main-header {
   position: relative;
-  background: url(webroot/../img/fondo.jpg);
+  background: url(../img/fondo.jpg);
   background-size: cover;
   min-height:200px;
   top: 9px;
