@@ -206,6 +206,15 @@ function ctlBorrar(){
     }
     
 }
+function ctlBorrarIncidencia(){
+    if(!empty($_POST['incidencias'])){
+        foreach($_POST['incidencias'] as $key => $value){
+             modeloDB::incidenceDel($value);
+        }
+    }
+    header('Location:index.php?orden=VerReserva');
+    
+ }
 //--------Cierra la sesi�n--------
 function ctlCerrar(){
     session_destroy();

@@ -16,6 +16,7 @@ class modeloDB {
     private static $delete_user= "DELETE FROM reserva where id=?";
     private static $insert_incidence = "INSERT INTO incidencias (id_reserva,id_empleado,descripcion) VALUES (?,?,?)";
     private static $select_incidence = "SELECT * from incidencias";
+    private static $delete_incidence= "DELETE FROM incidencias where id=?";
     
     public static function init(){
         
@@ -205,6 +206,16 @@ class modeloDB {
         }
         return $tIncidencias;
     }
+
+    public static function incidenceDel($idcheckbox){
+        $stmt =self::$dbh->prepare(self::$delete_incidence);
+        $stmt->bindValue(1,$idcheckbox);
+        if($stmt->execute()){
+        return true;
+        } else {
+        return false;
+        }
+        }
     //-------FUNCION PARA CERRAR LA BASE DE DATOS------
     public static function closeDB(){
         self::$dbh = null;

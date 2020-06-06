@@ -174,24 +174,25 @@
 							<span aria-hidden="true">&times;</span>
 							</button>
 						</div>
-						<div class="modal-body">                               	
-									<table><th>Id</th><th>NºReserva</th><th>Usuario</th><th>Descripcion</th>
-										<?php foreach ($listIncidencias as $clave => $datosIncidencia): ?>
-											<tr>
-												<?php for($i=0; $i<count($datosIncidencia);$i++):?>
-												<td><?= $datosIncidencia[$i] ?></td>
-												<?php endfor;?>
-											</tr>
-										<?php endforeach; ?>
+							<form method="post" action="index.php?orden=BorrarIncidencias">
+								<div class="modal-body">
+									<table><th>Nº Inc.</th><th>Nº Res.</th><th>Usuario</th><th>Descripcion</th><th>Realizado</th>
+									<?php foreach ($listIncidencias as $clave => $datosIncidencia): ?>
+									<tr>
+									<?php for($i=0; $i<count($datosIncidencia);$i++):?>
+									<td><?= $datosIncidencia[$i] ?></td>
+									<?php endfor;?>
+									<td><input type="checkbox" name="incidencias[]" id="checkboxid" value="<?= $datosIncidencia[0]?>" ></input></td>
+									</tr>
+									<?php endforeach; ?>
 									</table>
-                                
-                               
-                                
-                            </div>
-							<!-- Pie del modal -->
-							<div class="modal-footer">
+								</div>
+								<!-- Pie del modal -->
+								<div class="modal-footer">
+								<button type="submit" class="btn btn-success">Aceptar</button>
 								<button type="button" id="cancelarIncidencias" class="btn btn-default">Cancelar</button>
-							</div>
+								</div>
+							<form>
 					</div>
 				</div>
 			</div>

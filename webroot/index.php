@@ -14,7 +14,8 @@ $path=[
     "Agregar"    => "ctlAgregar",
     "Modificar"  => "ctlModificar",
     "Borrar"     => "ctlBorrar",
-    "RegistrarIncidencia" => "ctlIncidencia"
+    "RegistrarIncidencia" => "ctlIncidencia",
+    "BorrarIncidencias" => "ctlBorrarIncidencia"
 ];
 
 if (!isset($_SESSION['user'])){
