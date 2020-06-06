@@ -3,7 +3,7 @@
 // -------Controlador que realiza la reserva de salas--------
 
 include_once 'webroot/App/config.php';
-include_once 'App/modelo/modeloDB.php';
+include_once 'webroot/App/modelo/modeloDB.php';
 
 
 //-----Inicio Muestra o procesa el formulario (POST)------
@@ -34,7 +34,7 @@ function ctlInicio(){
         }
 
     }else{
-    include_once 'App/plantilla/principal.php';
+    include_once 'webroot/App/plantilla/principal.php';
     }   
 }
 
