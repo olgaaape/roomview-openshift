@@ -1,6 +1,6 @@
 @font-face {
-	font-family:titulo;
-    src:url(fuentes/titulo.ttf);
+	font-family:fuente1;
+    src:url(../fuentes/lorenza/LORENZA.ttf);
 }
 /*----- CABECERA -----*/
 
@@ -55,7 +55,7 @@ hr{
     display: flex;
     align-items: center;
     justify-content: center;
-
+    font-family: fuente1;
 
 }
 
@@ -69,6 +69,7 @@ th{
   background-size: cover;
   min-height:200px;
   top: 9px;
+ 
 }
 
 
