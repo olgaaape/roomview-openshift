@@ -86,7 +86,7 @@
 		</div>
 		
 		</nav>
-<hr>
+
 		<!-- CONTENIDO-->
 		
 		<div id="contenido" class=" container-fluid">
