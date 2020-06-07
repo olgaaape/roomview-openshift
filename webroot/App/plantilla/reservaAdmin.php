@@ -218,7 +218,7 @@
 			$('#borrar').click(function(){
 				var id = document.getElementById('txtID');
 		
-				 if(confirm("¿Quieres eliminar el archivo:  "+id.value)){
+				 if(confirm("¿Quieres eliminar el evento:  "+id.value+ "?")){
 					 document.location.href="?orden=Borrar&id="+id.value;
 				 }
 				 

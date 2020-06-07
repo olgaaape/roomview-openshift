@@ -156,6 +156,7 @@ function ctlModificar(){
         }else{
             $msg="La sala esta ocupada a esa hora";
             //Hacer que aparezca el error solo en el que modificas
+            include_once 'webroot/App/plantilla/reservaAdmin.php';
         }
         
         
