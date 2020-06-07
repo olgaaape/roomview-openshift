@@ -41,7 +41,7 @@
                 <div class="container">
                     <div class="row">
                         <div id="text" class="col-md-8 topmargin-lg">
-                            <h1>Aplicación de reserva de salas para <b>reuniones</b></h1>                            
+                            <h1 id="fuente">Aplicación de reserva de salas para <b>reuniones</b></h1>                            
                         </div>
                         <div id="login" class="col-md-4 topmargin-lg bg-white text-dark p-5">
                             <b><?= (isset($msg))?$msg:"" ?></b>
