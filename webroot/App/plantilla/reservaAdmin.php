@@ -91,7 +91,7 @@
 		<!-- CONTENIDO-->
 		
 		<div id="contenido" class=" container-fluid pt-3">
-			<input  class="btn btn-warning" type="button" value="Incidencias" id="verIncidencias" >
+			<input  class="btn btn-outline-light" type="button" value="Incidencias" id="verIncidencias" >
 				<div class="row p-4">
 					<div id="calendar" class="col-md-8 bg-white p-3 border border-secondary rounded offset-md-2"></div>
 				</div>
