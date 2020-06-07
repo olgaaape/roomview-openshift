@@ -1,5 +1,5 @@
 @font-face {
-	font-family:"fuente1";
+	font-family:fuente1;
     src:url(../fuentes/lorenza/LORENZA.ttf);
 }
 /*----- CABECERA -----*/
@@ -73,6 +73,6 @@ th{
 }
 
 #fuente{
-  font-family: "fuente1";
+  font-family:fuente1;
 }
 
