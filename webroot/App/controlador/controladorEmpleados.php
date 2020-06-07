@@ -26,7 +26,7 @@ function ctlInicio(){
                 }
                
             else {
-                $msg="Error: usuario y contrase�a no v�lidos.";
+                $msg="Error: usuario y contraseña no válidos.";
                 
                 include_once 'webroot/App/plantilla/principal.php';
                 session_destroy();
